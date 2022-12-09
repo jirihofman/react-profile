@@ -1,0 +1,21 @@
+{
+  "name": "@jirihofman/react-profile",
+  "version": "0.1.0",
+  "description": "Person profile (real or fictional) with basic information.",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"no test, thats ok\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jirihofman/react-profile.git"
+  },
+  "author": "Jiří Hofman",
+  "bugs": {
+    "url": "https://github.com/jirihofman/react-profile/issues"
+  },
+  "homepage": "https://github.com/jirihofman/react-profile#readme",
+  "dependencies": {
+    "react-bootstrap": "^2.7.0"
+  }
+}
