@@ -1,4 +1,5 @@
-import { Image, Placeholder} from 'react-bootstrap';
+import { Image, Placeholder } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 export default function Profile({ isLoading, name, email, image }) {
 
@@ -16,8 +17,14 @@ export default function Profile({ isLoading, name, email, image }) {
 			</div>
 		</div>
 		<div className='float-end'>
-			<Image src={isLoading ? placeholder : image} alt='user-profile-image' width='77px' height='77px' style={{ borderRadius: '100%' }} />
+			<Image src={image} alt='user-profile-image' width='77px' height='77px' style={{ borderRadius: '100%' }} />
 		</div>
 	</>;
 }
 
+Profile.propTypes = {
+	email: PropTypes.string.isRequired,
+	image: PropTypes.string,
+	isLoading: PropTypes.bool.isRequired,
+	name: PropTypes.string.isRequired
+};
