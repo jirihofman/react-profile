@@ -1,6 +1,13 @@
 # Profile
 Person profile (real or fictional) with basic information.
 
+## Installation
+Need to use GH PAT otherwise you will see when doing `npm install/npm ci`:
+```
+npm ERR! code E401
+npm ERR! 401 Unauthorized - GET https://npm.pkg.github.com/download/@jirihofman/react-profile/0.1.0/bde73a8d6d6f752478b39d8ee5bded6eea4c59ce - authentication token not provided
+```
+
 ## Release
 For now we release manually from `master`.
 1. Commit new version into `package.json`.
