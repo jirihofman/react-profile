@@ -1,9 +1,8 @@
-import { Image, Placeholder } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
 export default function Profile({ isLoading, name, email, image }) {
 
-	const placeholder = <Placeholder animation='glow'><Placeholder as={'span'} xs={10} /></Placeholder>;
+	const placeholder = <div className='placeholder-glow'><div as={'span'} xs={10} className='placeholder w-100' /></div>;
 
 	return <>
 		<div className='float-start'>
@@ -17,7 +16,7 @@ export default function Profile({ isLoading, name, email, image }) {
 			</div>
 		</div>
 		<div className='float-end'>
-			<Image src={image} alt='user-profile-image' width='77px' height='77px' style={{ borderRadius: '100%' }} />
+			<img src={image} alt='user-profile-image' width='77px' height='77px' style={{ borderRadius: '100%' }} />
 		</div>
 	</>;
 }
